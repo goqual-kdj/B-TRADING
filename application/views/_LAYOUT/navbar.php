@@ -7,11 +7,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">B-TRADING</a>
+            <a class="navbar-brand" href="/BTRADING/home">
+                <img src="<?= site_url()?>static/img/logo.png">
+            </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">HOME</a></li>
+                <li><a href="/BTRADING/home">HOME</a></li>
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">FEATURE</a></li>
                 <li class="dropdown">
@@ -23,7 +25,21 @@
                         <li><a href="#">Equity Mng</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Q&A Board</a></li>
+                <li><a href="<?=site_url()?>qna">Q&A Board</a></li>
+                <?php
+                $is_logined = $this->session->userdata('is_login');
+
+                if ($is_logined) {
+                    ?>
+                    <li><a href="<?=site_url('auth/logout')?>">LOGOUT</a></li>
+                    <?php
+                } else {
+                    ?>
+                    <li><a href="<?=site_url('auth/login')?>">LOGIN</a></li>
+                    <li><a href="<?=site_url('auth/join')?>">JOIN</a></li>
+                    <?php
+                }
+                ?>
             </ul>
         </div>
     </div>

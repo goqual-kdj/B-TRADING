@@ -1,0 +1,194 @@
+.sg-body-container {
+    padding-top: 0px !important;
+}
+
+.sg-auth-container {
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .sg-auth-content {
+        padding: 70px 0 0 !important;
+    }
+}
+
+.sg-auth-content {
+    padding: 148px 0 0;
+}
+
+.sg-auth-content .sg-auth-title {
+    color: #fff;
+    font-size: 4em;
+    margin: 0 auto 23px;
+    font-family: 'BebasNeue';
+    position: relative;
+}
+.sg-auth-content .sg-auth-title a {
+    color: #fff !important;
+}
+
+.sg-auth-content .sg-signup-form {
+    width: 427px;
+    padding: 45px 44px 30px 44px;
+    border: 1px solid #ebebeb;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background: url('https://www.pikicast.com/images/bg_png6.png') repeat;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.sg-auth-content .sg-signup-form .sg-auth-input-area {
+    border-bottom: 2px solid #B9B9B9;
+    padding: 20px 0 9px;
+}
+
+.sg-auth-content .sg-signup-form .sg-auth-input-area input {
+    width: 100%;
+    font-size: 15px;
+    background: none;
+    border: none;
+}
+
+.sg-auth-content .sg-signup-form .sg-auth-input-area input::-webkit-input-placeholder {
+    color: #828180;
+}
+
+.sg-auth-content .sg-signup-form .sg-auth-input-area input:-moz-placeholder {
+    color: #828180;
+}
+
+.sg-auth-content .sg-signup-form .sg-auth-btn-signup {
+    color: #fff;
+    font-size: 14px;
+    padding: 9px 0 15px;
+    background: #00a6de;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 17px 0 16px;
+    margin-top: 50px;
+}
+
+.sg-auth-content .sg-signup-form .sg-auth-line {
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #B3B0B0;
+    height: 30px;
+}
+
+.sg-auth-content .sg-signup-form .sg-auth-btn-fb-signup {
+    color: #fff;
+    font-size: 14px;
+    background: #556d9c;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 17px 0 16px;
+    margin-top: 15px;
+}
+.sg-auth-content .sg-signup-form .sg-auth-other-area {
+    padding: 10px 0 0;
+    overflow: hidden;
+    width: 100%;
+}
+.sg-auth-content .sg-signup-form .sg-auth-other-area .sg-auth-btn-join {
+    float: left;
+    font-size: 16px;
+}
+.sg-auth-content .sg-signup-form .sg-auth-other-area .sg-auth-btn-find-pass {
+    float: right;
+    font-size: 16px;
+    color: #626262;
+}
+
+.sg-auth-message {
+    color: #f34235;
+    font-size: 13px;
+    letter-spacing: -1px;
+    margin: 10px 0 0;
+    height: 43px;
+    text-align: left !important;
+}
+
+
+
+
+.bg-dark-alfa-50:before,
+.bg-dark-alfa-50 .YTPOverlay:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(34, 34, 34, .5);
+}
+
+.sg-auth-section {
+    background: url('/BTRADING/static/img/home_img_03.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+
+.sg-auth-footer {
+    background: #3B3A3C;
+    color: #939597;
+    padding: 10px 0 10px 0;
+    font-size: 11px;
+}
+
+
+
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    .sg-auth-content {
+        padding: 40px 0 0;
+    }
+    .sg-auth-content .sg-auth-title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .sg-auth-content .sg-signup-form {
+        width: 90%;
+        padding: 30px 30px;
+    }
+    .sg-auth-content .sg-login-form .sg-auth-input-area input {
+        font-size: 15px;
+    }
+    .sg-auth-content .sg-login-form .sg-auth-input-area {
+        padding: 10px 0 5px;
+    }
+    .sg-auth-content .sg-signup-form .sg-auth-btn-signup {
+        font-size: 14px;
+        padding: 12px 0 14px;
+        margin-top: 20px;
+    }
+    .sg-auth-content .sg-signup-form .sg-auth-line {
+        margin-bottom: 5px;
+        padding-bottom: 4px;
+        height: 30px;
+    }
+    .sg-auth-content .sg-login-form .sg-auth-other-area {
+        padding-top: 0px;
+    }
+    .sg-auth-content .sg-login-form .sg-auth-other-area .sg-auth-btn-join {
+        font-size: 16px;
+    }
+    .sg-auth-content .sg-login-form .sg-auth-other-area .sg-auth-btn-find-pass {
+        font-size: 16px;
+    }
+    .sg-footer-copy {
+        font-size: 10px;
+    }
+    .sg-auth-content .sg-signup-form .sg-auth-input-area {
+        padding-top: 14px;
+    }
+}

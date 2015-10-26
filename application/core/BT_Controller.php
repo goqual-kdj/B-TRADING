@@ -1,7 +1,12 @@
 <?php
 class BT_Controller extends CI_Controller {
+    private $is_mobile = FALSE;
     function __construct() {
         parent::__construct();
+
+        $this->is_mobile = (bool)preg_match('#\b(ip(hone|od)|android\b.+\bmobile|opera m(ob|in)i|windows (phone|ce)|blackberry'.
+            '|s(ymbian|eries60|amsung)|p(alm|rofile/midp|laystation portable)|nokia|fennec|htc[\-_]'.
+            '|up\.browser|[1-4][0-9]{2}x[1-4][0-9]{2})\b#i', $_SERVER['HTTP_USER_AGENT'] );
 
         if(!$this->input->is_cli_request())
             $this->load->library('session');
@@ -23,9 +28,11 @@ class BT_Controller extends CI_Controller {
         $this->load->view('_LAYOUT/navbar.php');
 
         if ($data != null) {
+            $data['is_mobile'] = $this->is_mobile;
+            var_dump($this->is_mobile);
             $this->load->view($viewStr, $data);
         } else {
-            $this->load->view($viewStr);
+            $this->load->view($viewStr, array('is_mobile' => $this->is_mobile));
         }
 
         $this->load->view('_LAYOUT/footer.php');
@@ -50,52 +57,24 @@ class BT_Controller extends CI_Controller {
         }
     }
 
-    function __require_admin_login($return_url = "") {
-        // 로그인이 되어 있지 않다면 로그인 페이지로 리다이렉션
-        if(!$this->session->userdata('is_login')){
-            if ($return_url == "") {
-                redirect('/Auth/login');
-            }
-            redirect('/Auth/login?returnURL='.rawurlencode($return_url));
-        }
-
-        if (!$this->session->userdata('is_admin')) {
-            if ($return_url == "") {
-                redirect('/Home/index');
-            }
-            redirect(rawurlencode($return_url));
-        }
-    }
-
     function __is_logined($return_url = "") {
-        // 로그인이 되어 있지 않다면 로그인 페이지로 리다이렉션
         if($this->session->userdata('is_login')){
-            if ($return_url == "") {
-                redirect('/Home/index');
-            }
-            redirect($return_url);
+            return true;
         }
+        return false;
     }
 
+    function __get_auth_view($view_str, $data = null) {
+        $this->load->view('_LAYOUT/auth_header.php', $data);
 
+        if ($data != null) {
+            $this->load->view($view_str, $data);
+        } else {
+            $this->load->view($view_str);
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        $this->load->view('_LAYOUT/auth_footer.php');
+    }
 
     /* handler */
     function handle_date ($date) {

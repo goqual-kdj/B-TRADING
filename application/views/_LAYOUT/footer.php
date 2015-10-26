@@ -49,9 +49,10 @@
         <script src="<?php echo base_url() ?>static/lib/bootstrap/js/bootstrap.min.js"></script>
         <script src="<?php echo base_url() ?>static/lib/js/ajaxBody.js"></script>
         <script src="<?php echo base_url() ?>static/lib/js/smoothscroll.js"></script>
-        <script src="<?php echo base_url() ?>static/lib/slider/jquery.bxslider.min.js"></script>
+        <script src="<?php echo base_url() ?>static/lib/slider/jquery.bxslider.js"></script>
         <script src="<?php echo base_url()?>static/js/common.js"></script>
-
+        <script src="<?php echo base_url()?>static/lib/datatable/jquery.dataTables.js" type="text/javascript"></script>
+        <script src="<?php echo base_url()?>static/lib/datatable/dataTables.bootstrap.min.js" type="text/javascript"></script>
 
         <?php
         $total_url = $_SERVER['PHP_SELF'];

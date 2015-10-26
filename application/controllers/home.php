@@ -11,7 +11,6 @@ class Home extends BT_Controller {
         $this->__get_views('_HOME/index');
     }
 
-
     function submit_contact_us()
     {
         $name = $_POST['name'];

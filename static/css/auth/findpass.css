@@ -1,0 +1,158 @@
+.sg-auth-section {
+    background: url('/BTRADING/static/img/home_img_03.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.sg-body-container {
+    padding-top: 0px !important;
+}
+
+.sg-auth-container {
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .sg-auth-content {
+        padding: 70px 0 0 !important;
+    }
+}
+
+.sg-auth-content {
+    padding: 148px 0 0;
+}
+
+.sg-auth-content .sg-auth-title {
+    color: #fff;
+    font-size: 4em;
+    margin: 0 auto 23px;
+    font-family: 'BebasNeue';
+    position: relative;
+}
+.sg-auth-content .sg-auth-title a {
+    color: #fff !important;
+}
+
+.sg-auth-content .sg-findpass-form {
+    width: 427px;
+    padding: 45px 44px 30px 44px;
+    border: 1px solid #ebebeb;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background: url('https://www.pikicast.com/images/bg_png6.png') repeat;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.sg-auth-content .sg-findpass-form-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #707070;
+    margin: 13px 0 35px 0;
+}
+
+.sg-findpass-form #sg-findpass-email {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(154, 154, 154);
+    padding: 7px;
+    width: 100%;
+}
+
+
+.sg-findpass-form .sg-auth-btn {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 17px 0 16px;
+    margin-top: 15px;
+}
+
+.sg-findpass-form .sg-auth-btn-findpass-email {
+    background: #00A8DF;
+}
+
+.sg-findpass-form .sg-auth-btn-findpass-fb {
+    background: #556d9c;
+}
+
+.sg-findpass-form .sg-auth-other-area {
+    font-size: 16px;
+    letter-spacing: -1px;
+    padding: 25px 0 0;
+    text-align: center;
+    color: #5c5d5d;
+}
+
+.sg-findpass-form .sg-auth-other-area a {
+    text-decoration: underline;
+}
+
+.sg-findpass-form .sg-auth-line {
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #B3B0B0;
+    height: 30px;
+}
+
+.sg-auth-footer {
+    background: #3B3A3C;
+    color: #939597;
+    padding: 10px 0 10px 0;
+    font-size: 11px;
+}
+
+
+
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    .sg-auth-content {
+        padding: 40px 0 0;
+    }
+    .sg-auth-content .sg-auth-title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .sg-auth-content .sg-findpass-form {
+        width: 90%;
+        padding: 30px 30px;
+    }
+    .sg-auth-content .sg-findpass-form-title {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .sg-auth-content .sg-login-form .sg-auth-input-area input {
+        font-size: 11px;
+    }
+    .sg-auth-content .sg-login-form .sg-auth-input-area {
+        padding: 10px 0 5px;
+    }
+    .sg-findpass-form .sg-auth-btn-findpass-email, .sg-findpass-form .sg-auth-btn-findpass-fb {
+        font-size: 14px;
+        padding: 12px 0 14px;
+    }
+    .sg-auth-content .sg-login-form .sg-auth-line {
+        margin-bottom: 5px;
+        padding-bottom: 4px;
+        height: 18px;
+    }
+    .sg-auth-content .sg-login-form .sg-auth-other-area {
+        padding-top: 0px;
+    }
+    .sg-auth-content .sg-login-form .sg-auth-other-area .sg-auth-btn-findpass {
+        font-size: 11px;
+    }
+    .sg-auth-content .sg-login-form .sg-auth-other-area .sg-auth-btn-find-pass {
+        font-size: 11px;
+    }
+    .sg-footer-copy {
+        font-size: 10px;
+    }
+}
