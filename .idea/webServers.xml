@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="6ecff015-2430-47b2-843b-33b79ea77959" name="BTRADING" url="http://goqual.com">
-        <fileTransfer host="goqual.com" port="22" rootFolder="/home/hosting_users/goqualweb/www/BTRADING" accessType="SFTP" username="goqualweb">
+        <fileTransfer host="goqual.com" port="22" rootFolder="/home/hosting_users/goqualweb/www/BTRADING" accessType="SFTP" password="dfcddfc5dfdbdfdfdfcbdfc6df9bdf98df8bdfea" username="goqualweb">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

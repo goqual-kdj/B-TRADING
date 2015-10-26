@@ -2,13 +2,12 @@
     var data_type = "json";
     if(dataType) {
         data_type = dataType
-    } 
+    }
 
     $.ajax({
         'url': url,
         'type': "POST",
         'dataType': data_type,
-        'contentType': 'application/json; charset=utf-8',
         'data': data,
         'xhrFields': {
             withCredentials: true
@@ -18,7 +17,7 @@
         },
         'error': function (arg) {
             if (error) {
-               error(arg);
+                error(arg);
             } else {
                 alert("error");
             }

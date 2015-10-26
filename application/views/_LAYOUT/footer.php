@@ -1,14 +1,45 @@
 </div>
-<div class="gq-footer">
-    <div class="container-fluid">
+<div class="bt-footer">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-sm-12 text-center gq-footer-text">
-                GOQUAL Inc.
-                <div>
-                    <div class="col-lg-12 col-sm-12 col-md-12 text-center gq-footer-copy">
-                        Copyrightⓒ. 2015. GOQUAL Inc. All Rights Reserved.
-                    </div>
+            <div class="col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-22 col-xs-12">
+                <div class="ft-title">
+                    <img src="<?= site_url()?>static/img/logo.png">
                 </div>
+                <div class="ft-content">
+                    Blockchain based the <br>
+                    Security Transaction Platform
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-22 col-xs-12">
+                <div class="ft-contact-title">
+                    CONTACT US
+                </div>
+                <form class="form-horizontal contact-fr" enctype="multipart/form-data" action="" method="post" id="frm">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="title" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input id="ft-name" type="text" name="name" class="form-control" value="" placeholder="name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="summary" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input id="ft-email" type="text" name="email" class="form-control" value="" placeholder="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="summary" class="col-sm-2 control-label">Content</label>
+                            <div class="col-sm-10">
+                                <textarea id="ft-content" class="form-control" placeholder="content" name="content"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="#" id="bt-submit" class="btn btn-primary pull-right">send</a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
