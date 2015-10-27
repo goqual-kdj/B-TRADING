@@ -7,13 +7,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/BTRADING/home">
+            <a class="navbar-brand" href="<?=site_url('home/index')?>">
                 <img src="<?= site_url()?>static/img/logo.png">
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/BTRADING/home">HOME</a></li>
+                <li><a href="<?=site_url('home/index')?>">HOME</a></li>
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">FEATURE</a></li>
                 <li class="dropdown">

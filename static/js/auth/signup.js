@@ -1,3 +1,4 @@
+var url = $('#btrading-url').val();
 var isMobile = $(window).width() > 700 ? false : true;
 var window_height = $(window).height();
 var footer = $('.sg-auth-footer').outerHeight();

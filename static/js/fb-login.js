@@ -94,8 +94,9 @@ $('.sg-auth-btn-fb-login').click(function () {
 
 function fbJoin() {
     var url = '/me?fields=name,email';
+    //var url = $('#btrading-url').val();
     FB.api(url, function(response) {
-        ajax_template('/BTRADING/API/auth/add_user_by_fb', response,
+        ajax_template($('#btrading-url').val() + 'API/auth/add_user_by_fb', response,
             function (data) {
                 console.log(data);
                 if (data > 0) {
@@ -113,16 +114,18 @@ function fbJoin() {
 function fbLogin() {
     var url = '/me?fields=name,email';
     FB.api(url, function(response) {
-        ajax_template('/BTRADING/API/auth/login_by_fb', response,
+        ajax_template($('#btrading-url').val() + 'API/auth/login_by_fb', response,
             function (data) {
                 console.log(data);
                 if (data > 0) {
-                    window.location.replace("/BTRADING/home/index");
+                    window.location.replace($('#btrading-url').val() + "home/index");
                 } else {
                     if (data == -1) {
                         alert('아직 회원이 아니시군요. 회원가입을 해주세요.');
                     } else if (data == -2) {
                         alert('비밀번호가 올바르지 않습니다.')
+                    } else if (data == -3) {
+                        window.location.replace($('#btrading-url').val() + "mgmt/dashboard");
                     } else {
                         alert('페이스북으로 로그인하는데 오류가 발생했습니다.');
                     }

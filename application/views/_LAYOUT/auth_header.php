@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/static/img/tab_01.png" />
+    <link rel="shortcut icon" href="<?=site_url()?>static/img/icon.png" />
 
     <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>static/css/common.css" rel="stylesheet">
@@ -58,6 +58,7 @@
 <body>
 
 <div class="sg-body-container">
+    <input type="hidden" id="btrading-url" value="http://goqual.com/BTRADING/">
     <?php
     $flashdata = $this->session->flashdata('message');
     if ($flashdata != null) {

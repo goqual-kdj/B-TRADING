@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    var url = $('#btrading-url').val();
     var isMobile = $(window).width() > 700 ? false : true;
     var window_height = $(window).height();
     var footer = $('.sg-auth-footer').outerHeight();
@@ -23,11 +24,11 @@ $(document).ready(function () {
     });
 
     function findpass(email) {
-        getJson('/BTRADING/API/auth/findpass', { email:  email },
+        getJson(url + 'API/auth/findpass', { email:  email },
             function (data) {
                 if (data == 1) {
                     alert('새로운 비밀번호가 발생되었습니다.');
-                    window.location = '/BTRADING/auth/login';
+                    window.location = url + 'auth/login';
                 }
             }, function (arg) {
                 console.log(arg);

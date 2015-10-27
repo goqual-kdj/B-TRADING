@@ -1,0 +1,56 @@
+/* title */
+.bt-qna-section {
+    padding: 110px 0 110px 0;
+}
+.bt-qna-section .title {
+    color: #83868E;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'BebasNeue';
+    margin-bottom: 40px;
+}
+.bt-qna-section .title p {
+    margin: 0;
+    padding: 0;
+    line-height: 17px;
+}
+
+/* form */
+.btn {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+.form-horizontal .box-footer a {
+    color: #fff;
+}
+.form-horizontal .box-footer a.btn-default {
+    background-color: #f4f4f4 !important;
+    color: #444 !important;
+    border-color: #ddd;
+}
+.form-horizontal .box-footer a#ng-submit:hover {
+    border-color: #21A8EE !important;
+}
+
+
+
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    .bt-qna-section {
+        padding: 40px 0 40px 0;
+    }
+    .bt-qna-section .title {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    label {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+}

@@ -10,9 +10,16 @@ class User_model extends CI_Model
         $this->table = 'bt_user';
     }
 
+    function gets()
+    {
+        $this->db->select('*');
+        $this->db->from($this->table);
+        return $this->db->get()->result();
+    }
+
     function get_user_by_email($email)
     {
-        return $this->db->get_where('bt_user', array('email' => $email))->row();
+        return $this->db->get_where($this->table, array('email' => $email))->row();
     }
 
     function logined($user)
@@ -105,5 +112,25 @@ class User_model extends CI_Model
         } catch (Exception $e) {
             return false;
         }
+    }
+
+    function change_isdeprecated($userid, $isdeprecated)
+    {
+        $input_data = array(
+            'isdeprecated' => $isdeprecated
+        );
+        $this->db->where('_userid', $userid);
+        $this->db->update($this->table, $input_data);
+        return $this->db->affected_rows();
+    }
+
+    function change_admin($userid, $is_admin)
+    {
+        $input_data = array(
+            'is_admin' => $is_admin
+        );
+        $this->db->where('_userid', $userid);
+        $this->db->update($this->table, $input_data);
+        return $this->db->affected_rows();
     }
 }

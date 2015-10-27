@@ -92,12 +92,12 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
                         Pellentesque nisi risus, porta sit amet dui eget..
                     </div>
-                    <div class="item">
+                    <div class="item web-item">
                         <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 img">
                                 <img src="/BTRADING/static/img/seller_full.png">
                             </div>
-                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 summary">
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 summary">
                                 <div class="title">
                                     Sellers
                                     <p>ㅡ</p>
@@ -131,12 +131,12 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
                         Pellentesque nisi risus, porta sit amet dui eget..
                     </div>
-                    <div class="item">
+                    <div class="item web-item">
                         <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 img">
                                 <img src="/BTRADING/static/img/buyer_full.png">
                             </div>
-                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 summary">
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 summary">
                                 <div class="title">
                                     Buyers
                                     <p>ㅡ</p>
@@ -170,7 +170,95 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
                         Pellentesque nisi risus, porta sit amet dui eget..
                     </div>
-                    <div class="item">
+                    <div class="item web-item">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 img">
+                                <img src="/BTRADING/static/img/company_full.png">
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 summary">
+                                <div class="title">
+                                    Companies
+                                    <p>ㅡ</p>
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            Lorem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            consectetur adipiscing elit.
+                                        </li>
+                                        <li>
+                                            Pellentesque nisl risus, porta
+                                        </li>
+                                        <li>
+                                            sit amet dui eget.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item mobile-item">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img">
+                                <img src="/BTRADING/static/img/seller_full.png">
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 summary">
+                                <div class="title">
+                                    Sellers
+                                    <p>ㅡ</p>
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            Lorem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            consectetur adipiscing elit.
+                                        </li>
+                                        <li>
+                                            Pellentesque nisl risus, porta
+                                        </li>
+                                        <li>
+                                            sit amet dui eget.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mobile-item">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img">
+                                <img src="/BTRADING/static/img/buyer_full.png">
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 summary">
+                                <div class="title">
+                                    Buyers
+                                    <p>ㅡ</p>
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            Lorem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            consectetur adipiscing elit.
+                                        </li>
+                                        <li>
+                                            Pellentesque nisl risus, porta
+                                        </li>
+                                        <li>
+                                            sit amet dui eget.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mobile-item">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img">
                                 <img src="/BTRADING/static/img/company_full.png">
@@ -243,7 +331,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 summary">
                         <div class="title">
-                            BigData Analysis
+                            Negotiation by Chat
                         </div>
                         <div class="content">
                             Whether you want to fill this paragraph with some text like <br>

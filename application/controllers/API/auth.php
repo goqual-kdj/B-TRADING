@@ -29,8 +29,13 @@ class Auth extends BT_Controller
                 $this->session->set_userdata('email', $user->email);
                 $this->session->set_userdata('username', $user->username);
                 $this->session->set_userdata('is_login', TRUE);
+                $this->session->set_userdata('is_admin', $user->is_admin);
 
-                echo json_encode($user->_userid, JSON_PRETTY_PRINT);
+                if ($user->is_admin == 1) {
+                    echo json_encode(-3, JSON_PRETTY_PRINT);
+                } else {
+                    echo json_encode($user->_userid, JSON_PRETTY_PRINT);
+                }
             } else {
                 echo json_encode(-2, JSON_PRETTY_PRINT);
             }

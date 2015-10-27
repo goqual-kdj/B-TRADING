@@ -1,5 +1,5 @@
 .bt-qna-section {
-    padding: 110px 0 110px 0;
+    padding: 110px 0 210px 0;
 }
 .bt-qna-section .title {
     color: #83868E;
@@ -13,12 +13,81 @@
     padding: 0;
     line-height: 17px;
 }
+.bt-qna-section .no-print {
+    margin-top: 20px;
+}
+.bt-qna-section .no-print a {
+    padding: 10px 30px;
+    background: #21A8EE !important;
+    border: none
+}
 
 
 
 /* mobile */
 @media only screen and (max-width: 600px) {
     .bt-qna-section {
+        padding: 40px 0 40px 0;
+    }
+    .bt-qna-section .title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
 
+    /* dataTable */
+    .table-responsive {
+        padding: 10px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+    table.dataTable thead > tr > th {
+        padding-right: 0;
+    }
+    table.dataTable thead .sorting:after {
+        content: ""!important;
+    }
+    table.dataTable thead .sorting_desc:after {
+        content: ""!important;
+    }
+    table.dataTable thead > tr > th {
+        font-size: 12px;
+    }
+    table.table-bordered tbody th, table.table-bordered tbody td {
+        font-size: 12px;
+    }
+    div.dataTables_info {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        font-size: 10px;
+    }
+    .dataTables_length {
+        text-align: left !important;
+        padding: 10px 10px 0;
+        font-size: 12px;
+    }
+    div.dataTables_filter {
+        text-align: left !important;
+        font-size: 12px;
+        padding: 10px;
+    }
+    div.dataTables_paginate ul.pagination {
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .pagination>li>a, .pagination>li>span {
+        font-size: 12px;
+    }
+    .pagination>li:first-child>a, .pagination>li:first-child>span {
+        font-size: 12px;
+    }
+    .pagination>li:last-child>a, .pagination>li:last-child>span {
+        font-size: 12px;
+    }
+    .bt-qna-section .no-print {
+        margin-top: 0;
+    }
+    .bt-qna-section .no-print a {
+        font-size: 12px;
     }
 }

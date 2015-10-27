@@ -1,7 +1,7 @@
 <section class="bt-qna-section">
     <div class="container">
         <div class="row">
-            <div class="title">
+            <div class="title col-xs-12">
                 <p>ㅡ</p>
                 Q&A Board
             </div>
@@ -42,9 +42,7 @@
         </div>
         <div class="row no-print">
             <div class="col-xs-12">
-                <a href="<?= site_url('/user/create') ?>" class="btn btn-primary pull-right">
-                    <i class="fa fa-download"></i> 글쓰기
-                </a>
+                <a href="<?= site_url('/qna/create') ?>" class="btn btn-primary pull-right">글쓰기</a>
             </div>
         </div>
     </div>

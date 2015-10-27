@@ -1,5 +1,5 @@
 $(document).ready(function () {
-   var url = 'http://goqual.com/BTRADING/';
+   var url = $('#btrading-url').val();
 
    $('#bt-submit').click(function () {
       var url = window.location.origin + '/BTRADING';
@@ -46,4 +46,14 @@ $(document).ready(function () {
       var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
       return regex.test(email);
    }
+
+   var currentUrl = window.location.href;
+
+   $('ul.nav a').filter(function() {
+      return this.href == currentUrl;
+   }).parent().addClass('active');
+   /*
+   $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+
+   */
 });

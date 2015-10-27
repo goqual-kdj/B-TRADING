@@ -29,13 +29,27 @@ class BT_Controller extends CI_Controller {
 
         if ($data != null) {
             $data['is_mobile'] = $this->is_mobile;
-            var_dump($this->is_mobile);
             $this->load->view($viewStr, $data);
         } else {
             $this->load->view($viewStr, array('is_mobile' => $this->is_mobile));
         }
 
         $this->load->view('_LAYOUT/footer.php');
+    }
+
+    function __mgmt_get_views($viewStr, $data = null) {
+        $this->load->view('_LAYOUT/mgmt_header.php');
+
+        $this->load->view('_LAYOUT/mgmt_navbar.php');
+
+        if ($data != null) {
+            $data['is_mobile'] = $this->is_mobile;
+            $this->load->view($viewStr, $data);
+        } else {
+            $this->load->view($viewStr, array('is_mobile' => $this->is_mobile));
+        }
+
+        $this->load->view('_LAYOUT/mgmt_footer.php');
     }
 
     function __get_partial_view($viewStr, $data = null, $is_value = false) {
@@ -46,14 +60,30 @@ class BT_Controller extends CI_Controller {
         }
     }
 
+    function __require_admin_login($return_url = "") {
+        // 로그인이 되어 있지 않다면 로그인 페이지로 리다이렉션
+        if(!$this->session->userdata('is_login')){
+            if ($return_url == "") {
+                redirect('/auth/login');
+            }
+            redirect('/auth/login?returnURL='.rawurlencode($return_url));
+        }
+
+        if (!$this->session->userdata('is_admin')) {
+            if ($return_url == "") {
+                redirect('/auth/login');
+            }
+            redirect(rawurlencode($return_url));
+        }
+    }
 
     function __require_login($return_url = "") {
         // 로그인이 되어 있지 않다면 로그인 페이지로 리다이렉션
         if(!$this->session->userdata('is_login')){
             if ($return_url == "") {
-                redirect('/Auth/login');
+                redirect('/auth/login');
             }
-            redirect('/Auth/login?returnURL='.rawurlencode($return_url));
+            redirect('/auth/login?returnURL='.rawurlencode($return_url));
         }
     }
 

@@ -93,10 +93,10 @@ class Auth extends BT_Controller {
         $this->session->set_userdata('email', $user->email);
         $this->session->set_userdata('username', $user->username);
         $this->session->set_userdata('is_login', TRUE);
+        $this->session->set_userdata('is_admin', $user->is_admin);
 
-        if ($user->is_admin) {
-            header("Location: http://something-goods.co.kr/MGMT/home/index"); /* Redirect browser */
-            exit();
+        if ($user->is_admin == 1) {
+            redirect('/mgmt/dashboard');
         }
 
         $returnURL = $this->input->get('returnURL');

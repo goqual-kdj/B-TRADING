@@ -2,16 +2,16 @@
 <div class="bt-footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-22 col-xs-12">
-                <div class="ft-title">
+            <div class="col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-12 col-xs-12">
+                <div class="ft-title col-lg-12 col-md-12 col-sm-6 com-xs-12">
                     <img src="<?= site_url()?>static/img/logo.png">
                 </div>
-                <div class="ft-content">
+                <div class="ft-content col-lg-12 col-md-12 col-sm-6 com-xs-12">
                     Blockchain based the <br>
                     Security Transaction Platform
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-22 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="ft-contact-title">
                     CONTACT US
                 </div>
@@ -80,6 +80,11 @@
         if (strpos($filename, 'index.php')) {
             ?>
             <script src="<?php echo base_url() ?>static/js/home/index.js"></script>
+            <?php
+        }
+        if (strpos($filename, 'create') || strpos($filename, 'submit') || strpos($filename, 'update')) {
+            ?>
+            <script src="<?php echo base_url()?>static/lib/summernote/summernote.js"></script>
             <?php
         }
         ?>

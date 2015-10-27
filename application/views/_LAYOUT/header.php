@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="shortcut icon" href="/static/img/gq_symbol.png" />-->
+    <link rel="shortcut icon" href="<?=site_url()?>static/img/icon.png" />
 
     <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url()?>static/css/common.css" rel="stylesheet">
@@ -16,7 +16,7 @@
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
     <link href="<?php echo base_url() ?>static/lib/slider/jquery.bxslider.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>static/lib/datatable/dataTables.bootstrap.css" rel="stylesheet" type="text/css"/>
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
     <?php
     $total_url = $_SERVER['PHP_SELF'];
@@ -46,6 +46,12 @@
         <link href="<?php echo base_url() ?>static/css/home/index.css" rel="stylesheet">
         <?php
     }
+
+    if (strpos($filename, 'create') || strpos($filename, 'submit') || strpos($filename, 'update')) {
+        ?>
+        <link href="<?php echo base_url()?>static/lib/summernote/summernote.css" rel="stylesheet">
+        <?php
+    }
     ?>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -58,3 +64,14 @@
 <body>
 
 <div class="bt-body-container">
+    <input type="hidden" id="btrading-url" value="http://goqual.com/BTRADING/">
+    <?php
+    $flashdata = $this->session->flashdata('message');
+    if ($flashdata != null) {
+    ?>
+    <script type="text/javascript">
+        alert('<?=$this->session->flashdata('message')?>');
+    </script>
+<?php
+}
+?>
