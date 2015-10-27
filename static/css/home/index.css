@@ -27,11 +27,11 @@
     font-size: 3em;
     line-height: 1em;
     margin-bottom: 35px;
-    text-shadow: 3px 3px rgba(2, 2, 2, 0.28);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.32);
 }
 .bt-main-slider .text-plane .content {
     color: #fff;
-    text-shadow: 3px 3px rgba(2, 2, 2, 0.28);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.32);
 }
 
 /* service */
@@ -181,7 +181,7 @@
 
 @media only screen and (max-width: 600px) {
     .bt-main-slider .text-plane {
-        padding-left: 2em !important;
+        padding-left: 3em !important;
     }
     .bt-main-slider .text-plane .title {
         font-size: 13px;
@@ -246,6 +246,18 @@
     }
     .bt-feature-section .content .content-item .summary .content br {
         display: none;
+    }
+
+
+    .bx-wrapper .bx-prev {
+        left: 1px !important;
+        background: url('/BTRADING/static/img/arrow_left.png') no-repeat;
+        background-size: 28px;
+    }
+    .bx-wrapper .bx-next {
+        right: 1px !important;
+        background: url('/BTRADING/static/img/arrow_right.png') no-repeat;
+        background-size: 28px;
     }
 }
 

@@ -6,9 +6,6 @@ function isIE () {
 if (isIE () && isIE () < 9) {
    alert('IE 버전을 업그레이드 해주세요.');
    window.location.href = "https://www.microsoft.com/ko-kr/download/internet-explorer.aspx";
-} else {
-   // is IE 9 and later or not IE
-   alert('ie9');
 }
 
 $(document).ready(function () {

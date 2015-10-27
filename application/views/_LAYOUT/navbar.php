@@ -14,15 +14,15 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?=site_url('home/index')?>">HOME</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">FEATURE</a></li>
+                <li><a href="javascript:void(0)">SERVICES</a></li>
+                <li><a href="javascript:void(0)">FEATURE</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         PRODUCTS<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Quotation</a></li>
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Equity Mng</a></li>
+                        <li><a href="javascript:void(0)">Quotation</a></li>
+                        <li><a href="javascript:void(0)">Action</a></li>
+                        <li><a href="javascript:void(0)">Equity Mng</a></li>
                     </ul>
                 </li>
                 <li><a href="<?=site_url()?>qna">Q&A Board</a></li>
