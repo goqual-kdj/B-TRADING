@@ -27,9 +27,11 @@
     font-size: 3em;
     line-height: 1em;
     margin-bottom: 35px;
+    text-shadow: 3px 3px rgba(2, 2, 2, 0.28);
 }
 .bt-main-slider .text-plane .content {
     color: #fff;
+    text-shadow: 3px 3px rgba(2, 2, 2, 0.28);
 }
 
 /* service */
@@ -170,6 +172,10 @@
 @media only screen and (min-width: 1000px) {
     .bt-service-section .content .service-item .item .summary .title {
         margin-top: 0px;
+    }
+    .bt-feature-section .content .content-item .pic {
+        padding-left: 35px;
+        padding-right: 35px;
     }
 }
 

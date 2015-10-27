@@ -3,8 +3,7 @@ $(document).ready(function () {
 
     // main slider
     $('.bt-main-slider').bxSlider({
-        mode: 'fade',
-        captions: true,
+        mode: "fade",
         auto: true,
         onSliderLoad: function () {
             var sliderHeight = $('.bx-viewport').height();

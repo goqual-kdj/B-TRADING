@@ -1,3 +1,16 @@
+function isIE () {
+   var myNav = navigator.userAgent.toLowerCase();
+   return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+}
+
+if (isIE () && isIE () < 9) {
+   alert('IE 버전을 업그레이드 해주세요.');
+   window.location.href = "https://www.microsoft.com/ko-kr/download/internet-explorer.aspx";
+} else {
+   // is IE 9 and later or not IE
+   alert('ie9');
+}
+
 $(document).ready(function () {
    var url = $('#btrading-url').val();
 
@@ -49,11 +62,17 @@ $(document).ready(function () {
 
    var currentUrl = window.location.href;
 
-   $('ul.nav a').filter(function() {
-      return this.href == currentUrl;
-   }).parent().addClass('active');
-   /*
-   $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+   console.log(currentUrl);
+   if (currentUrl.indexOf('/home') > 0) {
+      $($('ul.nav li')[0]).addClass('active');
+   } else if (currentUrl.indexOf('/qna') > 0) {
+      $($('ul.nav li')[7]).addClass('active');
+   }
 
-   */
+   $( ".dropdown" ).mouseover(function() {
+      $(this).addClass('open');
+   });
+   $( ".dropdown" ).mouseleave(function() {
+      $(this).removeClass('open');
+   });
 });
