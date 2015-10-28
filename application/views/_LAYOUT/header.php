@@ -15,13 +15,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="<?=site_url()?>static/img/icon.png" />
 
-    <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>static/css/common.css" rel="stylesheet">
-    <link href="/static/lib/animation/animate.css" rel="stylesheet">
+    <link href="<?=site_url()?>static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=site_url()?>static/css/common.css" rel="stylesheet">
+    <link href="<?=site_url()?>static/lib/animation/animate.css" rel="stylesheet">
 
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-    <link href="<?php echo base_url() ?>static/lib/slider/jquery.bxslider.css" rel="stylesheet">
-    <link href="<?php echo base_url() ?>static/lib/datatable/dataTables.bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="<?=site_url()?>static/lib/slider/jquery.bxslider.css" rel="stylesheet">
+    <link href="<?=site_url()?>static/lib/datatable/dataTables.bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
     <?php
@@ -44,18 +44,18 @@
 
     if(file_exists($filename)) {
         ?>
-        <link href="<?php echo base_url() ?><?php echo $filename; ?>" rel="stylesheet">
+        <link href="<?=site_url()?><?php echo $filename; ?>" rel="stylesheet">
         <?php
     }
     if (strpos($filename, 'index.php')) {
         ?>
-        <link href="<?php echo base_url() ?>static/css/home/index.css" rel="stylesheet">
+        <link href="<?=site_url()?>static/css/home/index.css" rel="stylesheet">
         <?php
     }
 
     if (strpos($filename, 'create') || strpos($filename, 'submit') || strpos($filename, 'update')) {
         ?>
-        <link href="<?php echo base_url()?>static/lib/summernote/summernote.css" rel="stylesheet">
+        <link href="<?=site_url()?>static/lib/summernote/summernote.css" rel="stylesheet">
         <?php
     }
     ?>
